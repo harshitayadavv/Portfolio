@@ -19,6 +19,20 @@ const Projects = forwardRef((props, ref) => {
 
   // Projects data for ChromaGrid
   const projectItems = [
+    // Add this as the FIRST item in your projectItems array
+
+{
+  image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=300&h=300&fit=crop&crop=center",
+  title: "WordSmith",
+  subtitle: "AI Text Companion",
+  handle: "@wordsmith",
+  description: "AI-powered Chrome extension and web app that instantly transforms text using 8 different styles. Features grammar fixes, tone changes, text shortening/expansion, bullet formatting, emoji addition, and tweet optimization for writers and professionals.",
+  techStack: ["React", "FastAPI", "Groq API", "Tailwind CSS", "Chrome Extension", "Railway", "Vercel"],
+  borderColor: "#FF6B6B",
+  gradient: "linear-gradient(135deg, #FF6B6B, #000)",
+  url: "https://github.com/harshitayadavv/wordsmith",
+  demoUrl: "https://word-smith-three.vercel.app/"
+    },
     {
       image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=300&fit=crop&crop=center",
       title: "AeroDeals",
@@ -73,17 +87,6 @@ const Projects = forwardRef((props, ref) => {
       borderColor: "#1DB954",
       gradient: "linear-gradient(135deg, #1DB954, #000)",
       url: "https://github.com/harshitayadavv/Spotify-Music-Recommender-"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300&h=300&fit=crop&crop=center",
-      title: "Typing Speed Test",
-      subtitle: "React + Material-UI",
-      handle: "@typing-test",
-      description: "A modern, responsive typing speed test application with multiple difficulty levels, real-time feedback, and detailed statistics including WPM calculation, accuracy percentage, and mistake counting.",
-      techStack: ["React", "Material-UI", "JavaScript", "CSS3", "Real-time Analytics"],
-      borderColor: "#8B5CF6",
-      gradient: "linear-gradient(225deg, #8B5CF6, #000)",
-      url: "https://github.com/harshitayadavv/Typing-Test"
     }
   ];
 
