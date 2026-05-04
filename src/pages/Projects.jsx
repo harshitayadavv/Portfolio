@@ -19,19 +19,41 @@ const Projects = forwardRef((props, ref) => {
 
   // Projects data for ChromaGrid
   const projectItems = [
-    // Add this as the FIRST item in your projectItems array
-
-{
-  image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=300&h=300&fit=crop&crop=center",
-  title: "WordSmith",
-  subtitle: "AI Text Companion",
-  handle: "@wordsmith",
-  description: "AI-powered Chrome extension and web app that instantly transforms text using 8 different styles. Features grammar fixes, tone changes, text shortening/expansion, bullet formatting, emoji addition, and tweet optimization for writers and professionals.",
-  techStack: ["React", "FastAPI", "Groq API", "Tailwind CSS", "Chrome Extension", "Railway", "Vercel"],
-  borderColor: "#FF6B6B",
-  gradient: "linear-gradient(135deg, #FF6B6B, #000)",
-  url: "https://github.com/harshitayadavv/wordsmith",
-  demoUrl: "https://word-smith-three.vercel.app/"
+    {
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=center",
+      title: "WarRoom",
+      subtitle: "Multi-Agent AI Debate Arena",
+      handle: "@warroom",
+      description: "Tell it anything — four AI agents debate it in real time. Proponent (AXIOM), Opponent (REFUTE), Fact-Checker (VERITAS), and Judge (ARBITER) stream responses live via WebSocket. Features fallacy detection, live web search, consensus tracking via vector embeddings, time-travel checkpoints, and a full verdict.",
+      techStack: ["Next.js", "FastAPI", "LangGraph", "Groq", "Supabase", "Redis", "WebSockets", "Tavily"],
+      borderColor: "#A855F7",
+      gradient: "linear-gradient(135deg, #A855F7, #000)",
+      url: "https://github.com/harshitayadavv/warroom",
+      demoUrl: "https://warroom-frontend.vercel.app"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=300&fit=crop&crop=center",
+      title: "SkyRacer",
+      subtitle: "AI Gesture & Voice Game",
+      handle: "@skyracer",
+      description: "An airplane game controlled entirely by hand swipes or voice commands — no keyboard needed. MediaPipe Hand Landmarker runs gesture detection fully in-browser; Web Speech API handles voice. Features 8 achievement badges, per-mode high scores, and user profiles with separate stats for voice and gesture modes.",
+      techStack: ["React", "FastAPI", "MediaPipe", "Web Speech API", "MongoDB", "WebSockets", "JWT"],
+      borderColor: "#F97316",
+      gradient: "linear-gradient(135deg, #F97316, #000)",
+      url: "https://github.com/harshitayadavv/SkyRacer",
+      demoUrl: "https://sky-racer.vercel.app"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=300&h=300&fit=crop&crop=center",
+      title: "WordSmith",
+      subtitle: "AI Text Companion",
+      handle: "@wordsmith",
+      description: "AI-powered Chrome extension and web app that instantly transforms text using 8 different styles. Features grammar fixes, tone changes, text shortening/expansion, bullet formatting, emoji addition, and tweet optimization for writers and professionals.",
+      techStack: ["React", "FastAPI", "Groq API", "Tailwind CSS", "Chrome Extension", "Railway", "Vercel"],
+      borderColor: "#FF6B6B",
+      gradient: "linear-gradient(135deg, #FF6B6B, #000)",
+      url: "https://github.com/harshitayadavv/wordsmith",
+      demoUrl: "https://word-smith-three.vercel.app/"
     },
     {
       image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=300&fit=crop&crop=center",
@@ -87,6 +109,29 @@ const Projects = forwardRef((props, ref) => {
       borderColor: "#1DB954",
       gradient: "linear-gradient(135deg, #1DB954, #000)",
       url: "https://github.com/harshitayadavv/Spotify-Music-Recommender-"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f3?w=300&h=300&fit=crop&crop=center",
+      title: "Life Expectancy Prediction",
+      subtitle: "ML Regression Analysis",
+      handle: "@life-expectancy-ml",
+      description: "Predicts country-level life expectancy from WHO health, economic, and demographic data. Compared five regression models — Linear, Polynomial, SVR, Decision Tree, and Random Forest. Random Forest achieved the best R² score of ~0.96, indicating strong generalization across global populations.",
+      techStack: ["Python", "Scikit-learn", "Random Forest", "Pandas", "Seaborn", "Jupyter Notebook"],
+      borderColor: "#EC4899",
+      gradient: "linear-gradient(135deg, #EC4899, #000)",
+      url: "https://github.com/harshitayadavv/life-expectancy-prediction"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300&h=300&fit=crop&crop=center",
+      title: "Typing Speed Test",
+      subtitle: "React Typing Trainer",
+      handle: "@typing-test",
+      description: "A modern, responsive typing speed test with real-time WPM, accuracy, mistake counting, and keystroke tracking. Supports easy, medium, and hard difficulty levels with a dark/light theme toggle and persistent high scores (top 10) stored in localStorage.",
+      techStack: ["React", "Material-UI", "Emotion", "LocalStorage API"],
+      borderColor: "#64748B",
+      gradient: "linear-gradient(135deg, #64748B, #000)",
+      url: "https://github.com/harshitayadavv/Typing-Test",
+      demoUrl: "https://typing-test-delta-ochre.vercel.app"
     }
   ];
 
