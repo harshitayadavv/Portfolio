@@ -1,6 +1,6 @@
 import React, { useEffect, forwardRef, useState } from "react";
 import { motion } from "framer-motion";
-import ProjectsBack from "../components/PojectsBack"; // Added .jsx extension
+import ProjectsBack from "../components/PojectsBack";
 import ChromaGrid from "../components/ReactBits/ChromaGrid/ChromaGrid";
 import Navbar from "../components/Navbar";
 
@@ -9,7 +9,6 @@ const Projects = forwardRef((props, ref) => {
 
   useEffect(() => {
     console.log("Projects section loaded");
-    // Force animations to trigger after a short delay
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 100);
@@ -20,7 +19,7 @@ const Projects = forwardRef((props, ref) => {
   // Projects data for ChromaGrid
   const projectItems = [
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=center",
+      image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=300&h=300&fit=crop&crop=center",
       title: "WarRoom",
       subtitle: "Multi-Agent AI Debate Arena",
       handle: "@warroom",
@@ -32,7 +31,7 @@ const Projects = forwardRef((props, ref) => {
       demoUrl: "https://warroom-frontend.vercel.app"
     },
     {
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=300&fit=crop&crop=center",
+      image: "https://images.unsplash.com/photo-1608306448197-e83633f1261d?w=300&h=300&fit=crop&crop=center",
       title: "SkyRacer",
       subtitle: "AI Gesture & Voice Game",
       handle: "@skyracer",
@@ -78,7 +77,7 @@ const Projects = forwardRef((props, ref) => {
       url: "https://github.com/harshitayadavv/Insta-News"
     },
     {
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=300&h=300&fit=crop&crop=center",
+      image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=300&h=300&fit=crop&crop=center",
       title: "Skylink",
       subtitle: "In-Flight Communication Platform",
       handle: "@skylink",
@@ -87,39 +86,6 @@ const Projects = forwardRef((props, ref) => {
       borderColor: "#06B6D4",
       gradient: "linear-gradient(180deg, #06B6D4, #000)",
       url: "https://github.com/harshitayadavv/Return0"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=300&h=300&fit=crop&crop=center",
-      title: "SAGA",
-      subtitle: "Digital Bookshelf Companion",
-      handle: "@saga",
-      description: "A modern web application designed to help users track and manage their reading progress. Features book search, reading lists management, progress tracking, and reviews with an engaging UI including custom illustrations.",
-      techStack: ["React.js", "React Router DOM", "CSS3", "Google Books API", "Custom UI Design"],
-      borderColor: "#F59E0B",
-      gradient: "linear-gradient(315deg, #F59E0B, #000)",
-      url: "https://github.com/harshitayadavv/saga"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1611339555312-e607c8352fd7?w=300&h=300&fit=crop&crop=center",
-      title: "Spotify Music Recommender",
-      subtitle: "ML Clustering System",
-      handle: "@spotify-ml",
-      description: "Performs unsupervised clustering of Spotify songs based on audio features using KMeans clustering. Groups songs into distinct 'vibe' clusters and provides content-based recommendations with PCA for visualization.",
-      techStack: ["Python", "KMeans", "PCA", "Scikit-learn", "Pandas", "Audio Feature Analysis"],
-      borderColor: "#1DB954",
-      gradient: "linear-gradient(135deg, #1DB954, #000)",
-      url: "https://github.com/harshitayadavv/Spotify-Music-Recommender-"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f3?w=300&h=300&fit=crop&crop=center",
-      title: "Life Expectancy Prediction",
-      subtitle: "ML Regression Analysis",
-      handle: "@life-expectancy-ml",
-      description: "Predicts country-level life expectancy from WHO health, economic, and demographic data. Compared five regression models — Linear, Polynomial, SVR, Decision Tree, and Random Forest. Random Forest achieved the best R² score of ~0.96, indicating strong generalization across global populations.",
-      techStack: ["Python", "Scikit-learn", "Random Forest", "Pandas", "Seaborn", "Jupyter Notebook"],
-      borderColor: "#EC4899",
-      gradient: "linear-gradient(135deg, #EC4899, #000)",
-      url: "https://github.com/harshitayadavv/life-expectancy-prediction"
     },
     {
       image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=300&h=300&fit=crop&crop=center",
@@ -148,7 +114,7 @@ const Projects = forwardRef((props, ref) => {
         transition={{ duration: 1 }}
       >
         {/* Page Title */}
-        <motion.div 
+        <motion.div
           className="text-center mb-8"
           initial={{ y: -30, opacity: 0 }}
           animate={isLoaded ? { y: 0, opacity: 1 } : { y: -30, opacity: 0 }}
@@ -163,14 +129,14 @@ const Projects = forwardRef((props, ref) => {
         </motion.div>
 
         {/* ChromaGrid Container */}
-        <motion.div 
+        <motion.div
           className="w-full max-w-7xl flex-1 flex items-start justify-center min-h-[1200px] pt-8 px-2"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={isLoaded ? { scale: 1, opacity: 1 } : { scale: 0.8, opacity: 0 }}
           transition={{ duration: 1, delay: 0.4 }}
         >
           <div style={{ height: '1200px', position: 'relative', width: '100%' }}>
-            <ChromaGrid 
+            <ChromaGrid
               items={projectItems}
               radius={550}
               damping={0.45}
@@ -181,7 +147,7 @@ const Projects = forwardRef((props, ref) => {
         </motion.div>
 
         {/* Bottom Text */}
-        <motion.div 
+        <motion.div
           className="text-center mt-6 mb-16"
           initial={{ y: 30, opacity: 0 }}
           animate={isLoaded ? { y: 0, opacity: 1 } : { y: 30, opacity: 0 }}
