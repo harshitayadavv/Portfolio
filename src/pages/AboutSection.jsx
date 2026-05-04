@@ -33,7 +33,7 @@ const AboutSection = forwardRef((props, ref) => {
           <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
         </svg>
       ),
-      url: "https://drive.google.com/file/d/1W3zkmcHzuBWGtAFo53qRewguKkKjPUEm/view?usp=sharing"
+      url: "https://drive.google.com/file/d/18RsnXqnR291Uah3keftir4Q3oVHVV_RN/view?usp=sharing"
     },
     {
       name: "LeetCode",
